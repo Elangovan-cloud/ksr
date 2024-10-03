@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Books of the Year</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .book {
+            margin-bottom: 30px;
+            padding: 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        .book h2 {
+            font-size: 1.8em;
+            color: #2980b9;
+        }
+        .book p {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6em;
+        }
+        .author {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #555;
+        }
+        .rating {
+            display: flex;
+            gap: 5px;
+            font-size: 1.2em;
+            color: #ffcc00;
+            margin-top: 10px;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        label {
+            cursor: pointer;
+        }
+        input[type="radio"]:checked ~ label {
+            color: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Best Books of the Year</h1>
+
+    <!-- Book 1 -->
+    <div class="book">
+        <h2>The Midnight Library</h2>
+        <p class="author">By Matt Haig</p>
+        <p>
+            A captivating and thought-provoking novel that explores the choices we make in life. In the "Midnight Library," Nora Seed gets the chance to undo her regrets and pursue alternative paths in life.
+        </p>
+        <div class="rating">
+            <span>Rate this book: </span>
+            <form>
+                <input type="radio" id="book1-star5" name="book1-rating" value="5">
+                <label for="book1-star5">&#9733;</label>
+                <input type="radio" id="book1-star4" name="book1-rating" value="4">
+                <label for="book1-star4">&#9733;</label>
+                <input type="radio" id="book1-star3" name="book1-rating" value="3">
+                <label for="book1-star3">&#9733;</label>
+                <input type="radio" id="book1-star2" name="book1-rating" value="2">
+                <label for="book1-star2">&#9733;</label>
+                <input type="radio" id="book1-star1" name="book1-rating" value="1">
+                <label for="book1-star1">&#9733;</label>
+            </form>
+        </div>
+    </div>
+
+    <!-- Book 2 -->
+    <div class="book">
+        <h2>The Vanishing Half</h2>
+        <p class="author">By Brit Bennett</p>
+        <p>
+            A powerful story that delves into identity, race, and family. The novel follows the lives of twin sisters, who take vastly different paths after growing up in a small, Black community in the South.
+        </p>
+        <div class="rating">
+            <span>Rate this book: </span>
+            <form>
+                <input type="radio" id="book2-star5" name="book2-rating" value="5">
+                <label for="book2-star5">&#9733;</label>
+                <input type="radio" id="book2-star4" name="book2-rating" value="4">
+                <label for="book2-star4">&#9733;</label>
+                <input type="radio" id="book2-star3" name="book2-rating" value="3">
+                <label for="book2-star3">&#9733;</label>
+                <input type="radio" id="book2-star2" name="book2-rating" value="2">
+                <label for="book2-star2">&#9733;</label>
+                <input type="radio" id="book2-star1" name="book2-rating" value="1">
+                <label for="book2-star1">&#9733;</label>
+            </form>
+        </div>
+    </div>
+
+    <!-- Book 3 -->
+    <div class="book">
+        <h2>Klara and the Sun</h2>
+        <p class="author">By Kazuo Ishiguro</p>
+        <p>
+            A moving and philosophical novel that explores the nature of love, intelligence, and human relationships through the perspective of Klara, an artificial intelligence robot designed to assist lonely children.
+        </p>
+        <div class="rating">
+            <span>Rate this book: </span>
+            <form>
+                <input type="radio" id="book3-star5" name="book3-rating" value="5">
+                <label for="book3-star5">&#9733;</label>
+                <input type="radio" id="book3-star4" name="book3-rating" value="4">
+                <label for="book3-star4">&#9733;</label>
+                <input type="radio" id="book3-star3" name="book3-rating" value="3">
+                <label for="book3-star3">&#9733;</label>
+                <input type="radio" id="book3-star2" name="book3-rating" value="2">
+                <label for="book3-star2">&#9733;</label>
+                <input type="radio" id="book3-star1" name="book3-rating" value="1">
+                <label for="book3-star1">&#9733;</label>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
